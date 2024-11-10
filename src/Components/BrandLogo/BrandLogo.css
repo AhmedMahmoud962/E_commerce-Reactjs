@@ -1,0 +1,72 @@
+.brand-logos-container {
+  width: 100%;
+  margin: 70px 0 0 auto;
+  padding: 4rem 1rem;
+  background-color: #d2d2d250
+}
+
+.brand-logos-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 70px;
+  flex-wrap: wrap;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-image {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 2.5rem;
+  object-fit: contain;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.logo-image:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@media (min-width: 640px) {
+  .brand-logos-container {
+    padding: 2rem 2rem;
+  }
+
+  .brand-logos-wrapper {
+    gap: 3rem;
+  }
+
+  .logo-image {
+    max-height: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .brand-logos-wrapper {
+    gap: 4rem;
+  }
+
+  .logo-image {
+    max-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .brand-logos-wrapper {
+    margin: 0;
+  }
+
+  .brand-logos-container {
+    margin: 30px 0 0 auto;
+  }
+
+}
