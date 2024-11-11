@@ -11,6 +11,7 @@ const BrandLogo = () => {
               src={brand.logo}
               alt={`${brand.name} logo`}
               className="logo-image"
+              loading="lazy"
             />
           </div>
         ))}

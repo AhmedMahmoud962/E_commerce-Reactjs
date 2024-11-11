@@ -54,7 +54,7 @@ const BestProduct = () => {
           <SwiperSlide key={index}>
             <div className="product-grid">
               <div className="product-image">
-                <img className="pic-1" src={product.productImage} alt="shoes" />
+                <img className="pic-1" src={product.productImage} alt="shoes" loading="lazy"  />
                 <span className="product-discount-label">
                   {product.Discount}
                 </span>

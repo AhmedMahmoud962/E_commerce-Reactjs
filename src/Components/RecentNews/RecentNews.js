@@ -16,7 +16,12 @@ const RecentNews = () => {
               <div className="card" key={index}>
                 <div className="card-banner">
                   <p className="category-tag popular">{item.category}</p>
-                  <img className="banner-img" src={item.Image} alt="" />
+                  <img
+                    className="banner-img"
+                    src={item.Image}
+                    alt="article"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="card-body">
                   <p className="blog-date">{item.date}</p>

@@ -7,7 +7,7 @@ function FormSignup() {
     <div className="wrapper-sign">
       <div className="inner inner-signup">
         <div className="image-holder">
-          <img src={Image} alt="Sign Up" />
+          <img src={Image} alt="Sign Up" loading="lazy" />
         </div>
         <form className="form" action="#">
           <h3>

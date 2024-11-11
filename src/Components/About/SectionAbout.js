@@ -8,7 +8,7 @@ const SectionAbout = () => {
       {AboutData.map((item) => (
         <section className="about-us" key={item.id}>
           <div className="main-img">
-            <img src={item.Image} alt="About Us" />
+            <img src={item.Image} alt="About Us" loading="lazy" />
           </div>
           <div className="about-content">
             <h4 className="data">{item.date}</h4>

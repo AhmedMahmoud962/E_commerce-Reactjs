@@ -16,7 +16,7 @@ const Banner = () => {
         </Link>
       </div>
       <div className="banner-image">
-        <img src={bannerImage} alt="Music Speaker" />
+        <img src={bannerImage} alt="Music Speaker" loading="lazy" />
       </div>
     </div>
   );

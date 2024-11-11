@@ -4,7 +4,7 @@ const HeroSection = (props) => {
   return (
     <section>
       <div className="eco-mid-background">
-        <img src={props.backgroundImg} alt="BackgroundImg" />
+        <img src={props.backgroundImg} alt="BackgroundImg" loading="lazy" />
         <div className="hero-text">
           <h1>{props.title}</h1>
           <p>{props.text}</p>

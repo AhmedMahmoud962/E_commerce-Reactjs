@@ -40,6 +40,7 @@ const Product = () => {
                   className="pic-1"
                   src={product.productImage}
                   alt={product.productName}
+                  loading="lazy"
                 />
                 {product.New && (
                   <span className="product-discount-label">{product.New}</span>
