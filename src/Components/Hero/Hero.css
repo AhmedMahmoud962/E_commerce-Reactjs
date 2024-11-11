@@ -16,10 +16,32 @@
 .slide-background {
   width: 100%;
   height: 100%;
+  transform: translateY(20px);
+  /* Start slightly below */
+  opacity: 0;
+  /* Start hidden */
   background-size: cover;
-  /* background-position: center; */
   background-position: bottom 90% right 0;
   background-repeat: no-repeat;
+  animation: slideUp 2s ease-out 1s forwards;
+  /* 1s delay before starting */
+}
+
+.slide-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .slide {
@@ -45,13 +67,13 @@
   margin-bottom: 1rem;
 }
 
-h1 {
+.content h1 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
   color: var(--white);
 }
 
-h2 {
+.content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--white);
@@ -106,14 +128,15 @@ h2 {
   }
 
   .content {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
   }
 
-  h1 {
+  .content h1 {
     font-size: 2rem;
   }
 
-  h2 {
+  .content h2 {
     font-size: 1.2rem;
   }
 }

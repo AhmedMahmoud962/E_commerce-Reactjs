@@ -33,21 +33,23 @@ const Product = () => {
       <FilterByCategory filterByCategory={filterByCategory} />
       <div className="row">
         {itemData.map((product, index) => (
-          <div className="col-md-3 col-sm-6" key={index}>
+          <div className="col-md-3 col-sm-6" key={index} >
             <div className="product-grid">
               <div className="product-image">
-                  <img
-                    className="pic-1"
-                    src={product.productImage}
-                    alt={product.productName}
-                  />
+                <img
+                  className="pic-1"
+                  src={product.productImage}
+                  alt={product.productName}
+                />
                 {product.New && (
                   <span className="product-discount-label">{product.New}</span>
                 )}
               </div>
               <div className="product-content">
                 <h3 className="title">
-                <Link to={`/product/${product.id}`}>{product.productName}</Link>
+                  <Link to={`/product/${product.id}`}>
+                    {product.productName}
+                  </Link>
                 </h3>
                 <div className="price">
                   {product.currentPrice}
@@ -56,7 +58,7 @@ const Product = () => {
               </div>
               <ul className="social">
                 <li>
-                <Link to={`/product/${product.id}`} data-tip="Quick View">
+                  <Link to={`/product/${product.id}`} data-tip="Quick View">
                     <FontAwesomeIcon icon={faEye} />
                   </Link>
                 </li>

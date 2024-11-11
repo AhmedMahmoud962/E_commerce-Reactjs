@@ -9,7 +9,6 @@ import Features from '../Components/Features/Features'
 import RecentNews from '../Components/RecentNews/RecentNews'
 // import Footer from '../Components/Footer/Footer'
 // import { AllData } from '../assets/data'
-// import FilterByCategory from '../Components/FilterByCatergory/FilterByCategory'
 export const Home = () => {
 
   return (

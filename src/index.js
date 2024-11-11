@@ -10,7 +10,7 @@ import { ShopContextProvider } from "./Context/ShopContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
+  <BrowserRouter future={{ v7_startTransition: true }}>
     <ShopContextProvider>
       <App />
     </ShopContextProvider>
