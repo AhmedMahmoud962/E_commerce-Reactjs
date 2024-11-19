@@ -73,7 +73,7 @@ const BestProduct = () => {
               </div>
               <ul className="social">
                 <li>
-                  <Link href="" data-tip="Quick View">
+                  <Link to={`/productDetails/${product.id}`} data-tip="Quick View">
                     <FontAwesomeIcon icon={faEye} />
                   </Link>
                 </li>
