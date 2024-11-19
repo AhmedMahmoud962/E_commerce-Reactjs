@@ -50,8 +50,8 @@ const BestProduct = () => {
           },
         }}
       >
-        {BestProductData.map((product, index) => (
-          <SwiperSlide key={index}>
+        {BestProductData.map((product) => (
+          <SwiperSlide key={product.id}>
             <div className="product-grid">
               <div className="product-image">
                 <img className="pic-1" src={product.productImage} alt="shoes" loading="lazy"  />
@@ -61,7 +61,9 @@ const BestProduct = () => {
               </div>
               <div className="product-content">
                 <h3 className="title">
-                  <Link href="#">{product.productName}</Link>
+                <Link to={`/productDetails/${product.id}`}>
+                    {product.productName}
+                  </Link>
                 </h3>
                 <p></p>
                 <div className="price">

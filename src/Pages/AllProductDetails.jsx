@@ -7,7 +7,21 @@
 //   const product = all_Products.find(
 //     (product) => product.id === Number(product.id),
 //   )
-//   return <div></div>
+//   return <div>
+
+//   </div>
 // }
 
 // export default Products
+
+import React from 'react'
+
+function AllProductDetails() {
+  return (
+    <>
+      <h1>All product details</h1>
+    </>
+  )
+}
+
+export default AllProductDetails

@@ -19,6 +19,8 @@ import Cart from "./Pages/Cart.jsx";
 import Login from "./Pages/Login.jsx";
 import Register from "./Pages/Register.jsx";
 import Footer from "./Components/Footer/Footer.js";
+import ProductDetails from "./Pages/ProductDetails.jsx";
+import AllProductDetails from "./Pages/AllProductDetails.jsx";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         {/* <Route path="/products" element={<Product />}>
           {" "}
         </Route> */}
+        <Route path="/allproduct/:id" element={<AllProductDetails />} />
+        <Route path="/productDetails/:id" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<ShopCategory />} />
         <Route path="/contact" element={<Contact />} />

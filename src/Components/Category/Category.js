@@ -21,38 +21,6 @@ const Category = () => {
               </div>
             </li>
           ))}
-          {/* <li>
-            <div className="collection-card men">
-              <h3 className="h4 card-title">Men Collections</h3>
-              <Link to="#" className="btn btn-secondary">
-                <span>Explore All</span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="collection-card women">
-              <h3 className="h4 card-title">Women Collections</h3>
-              <Link to="#" className="btn btn-secondary">
-                <span>Explore All</span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="collection-card sports">
-              <h3 className="h4 card-title">Sports Collections</h3>
-              <Link to="#" className="btn btn-secondary">
-                <span>Explore All</span>
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className="collection-card accessories">
-              <h3 className="h4 card-title">Accessories</h3>
-              <Link to="#" className="btn btn-secondary">
-                <span>Explore All</span>
-              </Link>
-            </div>
-          </li> */}
         </ul>
       </div>
     </section>

@@ -91,7 +91,7 @@ export const CategoryData = [
 // BestProductData
 export const BestProductData = [
   {
-    productId: 1,
+    id: 1,
     productName: "The north coat",
     Discount: "-11%",
     currentPrice: 100 + "$",
@@ -99,7 +99,7 @@ export const BestProductData = [
     productImage: bestImage1,
   },
   {
-    productId: 2,
+    id: 2,
     productName: " Gaming Laptop",
     Discount: "-12%",
     currentPrice: 1000 + "$",
@@ -107,7 +107,7 @@ export const BestProductData = [
     productImage: bestImage2,
   },
   {
-    productId: 3,
+    id: 3,
     productName: "PlayStation arm",
     Discount: "-42%",
     currentPrice: 17 + "$",
@@ -115,7 +115,7 @@ export const BestProductData = [
     productImage: bestImage3,
   },
   {
-    productId: 4,
+    id: 4,
     productName: "New Shoes",
     Discount: "-50%",
     currentPrice: 40 + "$",
@@ -123,7 +123,7 @@ export const BestProductData = [
     productImage: bestImage4,
   },
   {
-    productId: 5,
+    id: 5,
     productName: " Small BookSelf",
     Discount: "30%",
     currentPrice: 90 + "$",
@@ -131,7 +131,7 @@ export const BestProductData = [
     productImage: bestImage5,
   },
   {
-    productId: 6,
+    id: 6,
     productName: "Quilted Satin Jacket",
     Discount: "50%",
     currentPrice: 30 + "$",
@@ -139,7 +139,7 @@ export const BestProductData = [
     productImage: bestImage6,
   },
   {
-    productId: 7,
+    id: 7,
     productName: "CANON EOS DSLR Camera ",
     Discount: "22%",
     currentPrice: 350 + "$",
@@ -147,7 +147,7 @@ export const BestProductData = [
     productImage: bestImage7,
   },
   {
-    productId: 8,
+    id: 8,
     productName: "speaker X9yW-39F",
     Discount: "-20%",
     currentPrice: 40 + "$",
@@ -159,7 +159,7 @@ export const BestProductData = [
 // Your All products
 export const AllData = [
   {
-    productId: 1,
+    id: 1,
     productName: "Men's Blazer",
     // Discount: "-20%",
     New: "New",
@@ -169,7 +169,7 @@ export const AllData = [
     category: "clothes",
   },
   {
-    productId: 2,
+    id: 2,
     productName: "Woman's Blazer",
     // Discount: "-20%",
     New: "New",
@@ -179,7 +179,7 @@ export const AllData = [
     category: "clothes",
   },
   {
-    productId: 3,
+    id: 3,
     productName: "Iphone 14",
     // Discount: "-30%",
     New: "New",
@@ -189,7 +189,7 @@ export const AllData = [
     category: "electronics",
   },
   {
-    productId: 4,
+    id: 4,
     productName: "Headphone",
     // Discount: "-30%",
     New: "New",
@@ -198,7 +198,7 @@ export const AllData = [
     category: "electronics",
   },
   {
-    productId: 5,
+    id: 5,
     productName: "Man's Shoes",
     // Discount: "30%",
     New: "New",
@@ -207,7 +207,7 @@ export const AllData = [
     category: "shoes",
   },
   {
-    productId: 6,
+    id: 6,
     productName: "Woman's Shoes",
     // Discount: "30%",
     New: "New",
@@ -216,7 +216,7 @@ export const AllData = [
     category: "shoes",
   },
   {
-    productId: 7,
+    id: 7,
     productName: "Chair",
     // Discount: "New",
     New: "New",
@@ -226,7 +226,7 @@ export const AllData = [
     category: "furniture",
   },
   {
-    productId: 8,
+    id: 8,
     productName: "Table",
     // Discount: "New",
     New: "New",
@@ -235,7 +235,7 @@ export const AllData = [
     category: "furniture",
   },
   {
-    productId: 9,
+    id: 9,
     productName: "The north coat",
     Discount: "-11%",
     currentPrice: 100 + "$",
@@ -244,7 +244,7 @@ export const AllData = [
     category: "clothes",
   },
   {
-    productId: 10,
+    id: 10,
     productName: " Gaming Laptop",
     Discount: "-12%",
     currentPrice: 1000 + "$",
@@ -253,7 +253,7 @@ export const AllData = [
     category: "electronics",
   },
   {
-    productId: 11,
+    id: 11,
     productName: "PlayStation arm",
     Discount: "-42%",
     currentPrice: 17 + "$",
@@ -262,7 +262,7 @@ export const AllData = [
     category: "electronics",
   },
   {
-    productId: 12,
+    id: 12,
     productName: "New Shoes",
     Discount: "-50%",
     currentPrice: 40 + "$",
@@ -271,7 +271,7 @@ export const AllData = [
     category: "shoes",
   },
   {
-    productId: 13,
+    id: 13,
     productName: " Small BookSelf",
     Discount: "30%",
     currentPrice: 90 + "$",
@@ -280,7 +280,7 @@ export const AllData = [
     category: "furniture",
   },
   {
-    productId: 14,
+    id: 14,
     productName: "Quilted Satin Jacket",
     Discount: "50%",
     currentPrice: 30 + "$",
@@ -289,7 +289,7 @@ export const AllData = [
     category: "clothes",
   },
   {
-    productId: 15,
+    id: 15,
     productName: "CANON EOS DSLR Camera ",
     Discount: "22%",
     currentPrice: 350 + "$",
@@ -298,7 +298,7 @@ export const AllData = [
     category: "electronics",
   },
   {
-    productId: 16,
+    id: 16,
     productName: "speaker X9yW-39F",
     Discount: "-20%",
     currentPrice: 40 + "$",
@@ -311,7 +311,7 @@ export const AllData = [
 // RecentData
 export const RecentData = [
   {
-    ket: 1,
+    id: 1,
     date: "Jan 20, 2024 by Sabira",
     title: "How to choose perfect smartwatch",
     description: `minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?`,
@@ -320,7 +320,7 @@ export const RecentData = [
     buttonText: "Read More",
   },
   {
-    ket: 2,
+    id: 2,
     date: "Jan 20, 2024 by Dilshad",
     title: "How to choose perfect gadget",
     description: `minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?`,
@@ -329,7 +329,7 @@ export const RecentData = [
     buttonText: "Read More",
   },
   {
-    ket: 3,
+    id: 3,
     date: "Jan 20, 2024 by Satya",
     title: "How to choose perfect VR headset",
     description: `minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?`,

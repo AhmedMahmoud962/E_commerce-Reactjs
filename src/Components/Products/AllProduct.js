@@ -32,8 +32,8 @@ const Product = () => {
       </h1>
       <FilterByCategory filterByCategory={filterByCategory} />
       <div className="row">
-        {itemData.map((product, index) => (
-          <div className="col-md-3 col-sm-6" key={index} >
+        {itemData.map((product) => (
+          <div className="col-md-3 col-sm-6" key={product.id}>
             <div className="product-grid">
               <div className="product-image">
                 <img
@@ -48,7 +48,7 @@ const Product = () => {
               </div>
               <div className="product-content">
                 <h3 className="title">
-                  <Link to={`/product/${product.id}`}>
+                  <Link to={`/allproduct/${product.id}`}>
                     {product.productName}
                   </Link>
                 </h3>
@@ -59,7 +59,7 @@ const Product = () => {
               </div>
               <ul className="social">
                 <li>
-                  <Link to={`/product/${product.id}`} data-tip="Quick View">
+                  <Link to={`/allproduct/${product.id}`} data-tip="Quick View">
                     <FontAwesomeIcon icon={faEye} />
                   </Link>
                 </li>
