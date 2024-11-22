@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./FormLogin.css";
-import Image from "../../assets/slider/slider4.jpg";
+import Image from "../../assets/slider/slider4.webp";
 
 function FormLogin() {
   return (
