@@ -28,9 +28,6 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/products" element={<Product />}>
-          {" "}
-        </Route> */}
         <Route path="/allproduct/:id" element={<AllProductDetails />} />
         <Route path="/productDetails/:id" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
