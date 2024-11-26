@@ -1,11 +1,13 @@
-import React from 'react'
+// import React , {useContext} from 'react'
 import Background from '../Components/Background/Background'
 import ProductImage from '../assets/background/products-page-heading.jpg'
 import BestProduct from '../Components/Products/BestProducts'
 import AllProduct from '../Components/Products/AllProduct'
 import Features from '../Components/Features/Features'
-
+// import { AllData } from "../assets/data";
+// import { ShopContext } from '../Context/ShopContext'
 export const ShopCategory = () => {
+  // const {AllData} = useContext(ShopContext);
   return (
     <>
       <Background

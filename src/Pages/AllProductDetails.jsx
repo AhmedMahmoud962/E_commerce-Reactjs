@@ -1,27 +1,20 @@
-// import React, { useContext } from 'react'
-// import { ShopContext } from '../Context/ShopContext'
-// import { useParams } from 'react-router-dom'
-// export const Products = () => {
-//   const { all_Products } = useContext(ShopContext)
-//   const { productId } = useParams()
-//   const product = all_Products.find(
-//     (product) => product.id === Number(product.id),
-//   )
-//   return <div>
-
-//   </div>
-// }
-
-// export default Products
-
-import React from 'react'
-
-function AllProductDetails() {
+import React, { useContext } from 'react'
+import { ShopContext } from '../Context/ShopContext'
+import { useParams } from 'react-router-dom'
+export const Products = () => {
+  const { AllData } = useContext(ShopContext)
+  const { productId } = useParams()
+  const product = AllData.find((e) => e.id === Number(productId))
+  console.log(product)
   return (
     <>
-      <h1>All product details</h1>
+      <div className="container">
+        <h1>{product.productName}</h1>
+        <img src={product.productImage} alt={product.productImage} />
+        <p>Price: ${product.currentPrice}</p>
+      </div>
     </>
   )
 }
 
-export default AllProductDetails
+export default Products
