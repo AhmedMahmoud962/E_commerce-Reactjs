@@ -61,7 +61,7 @@ const BestProduct = () => {
               </div>
               <div className="product-content">
                 <h3 className="title">
-                <Link to={`/productDetails/${product.id}`}>
+                <Link to={`/bestProductDetails/${product.id}`}>
                     {product.productName}
                   </Link>
                 </h3>
@@ -73,7 +73,7 @@ const BestProduct = () => {
               </div>
               <ul className="social">
                 <li>
-                  <Link to={`/productDetails/${product.id}`} data-tip="Quick View">
+                  <Link to={`/bestProductDetails/${product.id}`} data-tip="Quick View">
                     <FontAwesomeIcon icon={faEye} />
                   </Link>
                 </li>

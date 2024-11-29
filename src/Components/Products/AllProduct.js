@@ -48,7 +48,7 @@ const Product = () => {
               </div>
               <div className="product-content">
                 <h3 className="title">
-                  <Link to={`/allproduct/${product.id}`}>
+                  <Link to={`/productDetails/${product.id}`}>
                     {product.productName}
                   </Link>
                 </h3>
@@ -59,7 +59,7 @@ const Product = () => {
               </div>
               <ul className="social">
                 <li>
-                  <Link to={`/allproduct/${product.id}`} data-tip="Quick View">
+                  <Link to={`/productDetails/${product.id}`} data-tip="Quick View">
                     <FontAwesomeIcon icon={faEye} />
                   </Link>
                 </li>

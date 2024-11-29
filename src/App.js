@@ -20,7 +20,7 @@ import Login from "./Pages/Login.jsx";
 import Register from "./Pages/Register.jsx";
 import Footer from "./Components/Footer/Footer.js";
 import ProductDetails from "./Pages/ProductDetails.jsx";
-import AllProductDetails from "./Pages/AllProductDetails.jsx";
+import BestProductDetails from "./Pages/BestProductDetails.jsx";
 
 function App() {
   return (
@@ -28,8 +28,11 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/allproduct/:productId" element={<AllProductDetails />} />
-        <Route path="/productDetails/:id" element={<ProductDetails />} />
+        <Route
+          path="/bestProductDetails/:productId"
+          element={<BestProductDetails />}
+        />
+        <Route path="/productDetails/:productId" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<ShopCategory />} />
         <Route path="/contact" element={<Contact />} />

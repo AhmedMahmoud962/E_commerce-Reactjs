@@ -7,12 +7,15 @@ import { BrowserRouter } from "react-router-dom";
 import "slick-carousel/slick/slick.css"; // react slick
 import "slick-carousel/slick/slick-theme.css"; // react slick
 import ShopContextProvider from "./Context/ShopContext";
+import BestContextProvider from "./Context/BestContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter >
+  <BrowserRouter>
     <ShopContextProvider>
-      <App />
+      <BestContextProvider>
+        <App />
+      </BestContextProvider>
     </ShopContextProvider>
   </BrowserRouter>
 );
