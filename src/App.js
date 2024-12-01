@@ -21,6 +21,7 @@ import Register from "./Pages/Register.jsx";
 import Footer from "./Components/Footer/Footer.js";
 import ProductDetails from "./Pages/ProductDetails.jsx";
 import BestProductDetails from "./Pages/BestProductDetails.jsx";
+import NotFound from "./Components/NotFound/NotFound.js";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>
