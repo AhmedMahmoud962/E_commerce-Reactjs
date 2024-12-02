@@ -10,6 +10,7 @@ import {
 import { AllData } from "../../assets/data";
 import FilterByCategory from "../FilterByCatergory/FilterByCategory";
 import "./Products.css";
+import ViewProducts from "./ViewProducts";
 
 const Product = () => {
   const [itemData, setItemData] = useState(AllData);
@@ -59,7 +60,10 @@ const Product = () => {
               </div>
               <ul className="social">
                 <li>
-                  <Link to={`/productDetails/${product.id}`} data-tip="Quick View">
+                  <Link
+                    to={`/productDetails/${product.id}`}
+                    data-tip="Quick View"
+                  >
                     <FontAwesomeIcon icon={faEye} />
                   </Link>
                 </li>
@@ -83,11 +87,7 @@ const Product = () => {
           </div>
         ))}
       </div>
-      <div className="text-center">
-        <Link to="#" className="view-all">
-          View All Products
-        </Link>
-      </div>
+      {/* <ViewProducts/> */}
     </div>
   );
 };
