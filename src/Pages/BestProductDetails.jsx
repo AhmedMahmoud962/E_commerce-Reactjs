@@ -22,7 +22,6 @@ function BestProductDetails() {
               alt={product.productName}
             />
           </div>
-
           {/* Product Info */}
           <div className="product-info">
             <h1 className="product-title">{product.productName}</h1>
