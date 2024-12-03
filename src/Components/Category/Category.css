@@ -6,7 +6,7 @@
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 .5rem;
 }
 
 .collection-list {

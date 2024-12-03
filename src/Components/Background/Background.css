@@ -81,3 +81,12 @@
     font-size: .9rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+
+
+  .eco-mid-background {
+    height: 45vh;
+  }
+
+}

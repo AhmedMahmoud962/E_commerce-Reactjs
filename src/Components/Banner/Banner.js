@@ -11,7 +11,7 @@ const Banner = () => {
         <h1 className="banner-title">
           Enhance Your <br /> Music Experience
         </h1>
-        <Link to="#" className="banner-button">
+        <Link to="/shop" className="banner-button">
           Shop Now
         </Link>
       </div>

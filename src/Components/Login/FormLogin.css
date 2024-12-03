@@ -143,7 +143,7 @@ p .link {
 
 @media screen and (max-width: 480px) {
   .form {
-    padding: 20px 5px;
+    padding: 20px 15px;
   }
 
   .form h3 {
