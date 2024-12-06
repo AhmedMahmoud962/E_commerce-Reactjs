@@ -1,8 +1,8 @@
 :root {
-
   /**
-   * colors
+   * Light Theme Colors
    */
+  --body: #fff;
   --gray: hsl(0, 0%, 74%);
   --background: hsl(5, 100%, 69%);
   --logo: hsl(5, 100%, 73%);
@@ -12,8 +12,24 @@
   --footer-bg: hsla(0, 0%, 74%, 0.2);
   --text-gray: #777;
   --text-secondary: #333;
-
 }
+
+.dark-mode {
+  /**
+   * Dark Theme Colors
+   */
+  --body: #000;
+  --gray: hsl(0, 0%, 88%);
+  --background: hsl(5, 100%, 69%);
+  --logo: hsl(5, 100%, 73%);
+  --hover-bg: hsl(5, 100%, 73%);
+  --white: hsl(0, 0%, 0%);
+  --black: hsl(0, 0%, 100%);
+  --footer-bg: hsla(0, 0%, 0%, 0.2);
+  --text-gray: hsl(0, 0%, 60%);
+  --text-secondary: hsl(0, 0%, 90%);
+}
+
 
 *::-webkit-scrollbar {
   width: 7px;
@@ -33,4 +49,8 @@
 
 a {
   text-decoration: none;
+}
+
+body {
+  background-color: var(--body);
 }

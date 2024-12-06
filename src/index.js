@@ -8,14 +8,17 @@ import "slick-carousel/slick/slick.css"; // react slick
 import "slick-carousel/slick/slick-theme.css"; // react slick
 import ShopContextProvider from "./Context/ShopContext";
 import BestContextProvider from "./Context/BestContext";
+// import { ThemeProvider } from "./Components/Toggle/ToggleTheme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <ShopContextProvider>
-      <BestContextProvider>
-        <App />
-      </BestContextProvider>
-    </ShopContextProvider>
-  </BrowserRouter>
+  // <ThemeProvider>
+    <BrowserRouter>
+      <ShopContextProvider>
+        <BestContextProvider>
+          <App />
+        </BestContextProvider>
+      </ShopContextProvider>
+    </BrowserRouter>
+  // </ThemeProvider>
 );

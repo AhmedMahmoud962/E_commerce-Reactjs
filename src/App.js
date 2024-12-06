@@ -14,10 +14,22 @@ import Register from "./Pages/Register.jsx";
 import ProductDetails from "./Pages/ProductDetails.jsx";
 import BestProductDetails from "./Pages/BestProductDetails.jsx";
 import NotFound from "./Components/NotFound/NotFound.js";
+// import { useTheme } from './Components/Toggle/ToggleTheme';
+
+// const ThemeToggleButton = () => {
+//   const { theme, toggleTheme } = useTheme();
+
+//   return (
+//     <button onClick={toggleTheme}>
+//       Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+//     </button>
+//   );
+// };
 
 function App() {
   return (
     <div className="App">
+      {/* <ThemeToggleButton /> */}
       <Header />
       {/* ScrollToTop to return to top */}
       <ScrollToTop />
