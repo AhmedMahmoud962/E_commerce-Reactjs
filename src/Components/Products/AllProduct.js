@@ -10,7 +10,7 @@ import {
 import { AllData } from "../../assets/data";
 import FilterByCategory from "../FilterByCatergory/FilterByCategory";
 import "./Products.css";
-import ViewProducts from "./ViewProducts";
+
 
 const Product = () => {
   const [itemData, setItemData] = useState(AllData);
