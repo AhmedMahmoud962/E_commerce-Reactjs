@@ -15,9 +15,7 @@ const Breadcrumb = (props) => {
             <li>
               <Link to="/shop">Shop / </Link>
             </li>
-            <li>
-              <li>{product.category} / </li>
-            </li>
+            <li>{product.category} /</li>
             <li>{product.productName}</li>
           </ul>
         </div>

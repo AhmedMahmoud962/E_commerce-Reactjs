@@ -27,7 +27,7 @@ function App() {
           path="/bestProductDetails/:productId"
           element={<BestProductDetails />}
         />
-        <Route path="/productDetails" >
+        <Route path="/products" >
         <Route index={true} element={<ProductDetails />} />
         <Route path=":productId" element={<ProductDetails />} />
         <Route path="cart" element={<Cart />} />
