@@ -42,12 +42,11 @@ function App() {
         <Route path="/products" >
         <Route index={true} element={<ProductDetails />} />
         <Route path=":productId" element={<ProductDetails />} />
-        <Route path="cart" element={<Cart />} />
         </Route> 
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<ShopCategory />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path="/cart" element={<Cart />} /> */}
+        <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="*" element={<NotFound />} />
