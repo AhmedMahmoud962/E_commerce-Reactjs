@@ -124,24 +124,12 @@
   background: #026aa7;
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #555;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
 
   .cart-header,
   .totals div,
   .date-total-container {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     text-align: center;
   }
