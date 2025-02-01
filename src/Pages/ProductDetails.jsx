@@ -15,10 +15,7 @@ export const Products = () => {
           <div className="product-detail-content">
             {/* Product Image */}
             <div className="product-image">
-              <img
-                src={product.productImage} // Replace with the actual image URL or path
-                alt={product.productName}
-              />
+              <img src={product.productImage} alt={product.productName} />
             </div>
             {/* Product Info */}
             <div className="product-info">
