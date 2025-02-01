@@ -1,0 +1,156 @@
+/* General Styles */
+.cart {
+  max-width: 1300px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cart h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+}
+
+.shop-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #f4f4f4;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.shipping-method,
+.order-note {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.order-note textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Totals Section */
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.totals div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.total {
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* Date and Total Alignment */
+.date-total-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.1em;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.date-total-container .date {
+  text-align: right;
+  color: #555;
+}
+
+.date-total-container .total {
+  text-align: left;
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* Coupon and Checkout */
+.coupon-code {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-code input {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.coupon-code button,
+.checkout button {
+  padding: 12px 20px;
+  background: var(--background);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.coupon-code button:hover,
+.checkout button:hover {
+  background: #026aa7;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .cart-header,
+  .totals div,
+  .date-total-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coupon-code {
+    flex-direction: column;
+  }
+
+  .coupon-code input {
+    width: 100%;
+  }
+}
