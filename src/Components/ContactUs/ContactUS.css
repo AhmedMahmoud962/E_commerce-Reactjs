@@ -1,0 +1,154 @@
+/* 
+---------------------------------------------
+Contact Page Styles
+--------------------------------------------- 
+*/
+
+.contact-page {
+  margin: 60px 0;
+}
+
+/* Left Text Section */
+.contact-page .left-text {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contact-page .left-text .section-heading {
+  margin-bottom: 50px;
+}
+
+.contact-page .left-text p {
+  margin-bottom: 50px;
+}
+
+.contact-page .left-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-page .left-text ul li {
+  display: block;
+  font-size: 16px;
+  color: gray;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.contact-page .left-text ul li:last-child {
+  margin-bottom: 0;
+}
+
+.contact-page .left-text ul li span {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.contact-page .left-text ul li a {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-page .left-text ul li a:hover {
+  color: var(--hover-bg);
+}
+
+/* Right Content Section */
+.contact-page .right-content {
+  margin-left: 50px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 60px;
+}
+
+.contact-page .right-content #map {
+  margin-bottom: 60px;
+}
+
+.contact-page .right-content form input,
+.contact-page .right-content form textarea {
+  width: 100%;
+  border-radius: 25px;
+  padding: 15px 20px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #000;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-page .right-content form input:focus,
+.contact-page .right-content form textarea:focus {
+  border-color: var(--background);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.contact-page .right-content form textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.contact-page .right-content form button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--background);
+  color: var(--white);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 25px;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.contact-page .right-content form button:hover {
+  background-color: var(--hover-bg);
+  transform: translateY(-2px);
+  /* Added hover effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  /* Enhanced hover shadow */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .contact-page .right-content {
+    margin-left: 0;
+    margin-top: 45px;
+  }
+
+  .contact-page .left-text {
+    padding: 30px;
+  }
+
+  .contact-page .right-content {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .contact-page .left-text,
+  .contact-page .right-content {
+    padding: 20px;
+  }
+
+  .contact-page .right-content form input,
+  .contact-page .right-content form textarea {
+    padding: 10px 15px;
+  }
+
+  .contact-page .right-content form button {
+    width: 100%;
+  }
+}
