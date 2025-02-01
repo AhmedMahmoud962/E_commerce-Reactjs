@@ -6,10 +6,16 @@ import AllProduct from '../Components/Products/AllProduct'
 import Features from '../Components/Features/Features'
 // import { AllData } from "../assets/data";
 // import { ShopContext } from '../Context/ShopContext'
+import { Helmet } from 'react-helmet-async'
+
 export const ShopCategory = () => {
   // const {AllData} = useContext(ShopContext);
   return (
     <>
+      <Helmet>
+        <title>Shop Category</title>
+        <meta name="description" content="Shop Category Page" />
+      </Helmet>
       <Background
         backgroundImg={ProductImage}
         title="Our Products"

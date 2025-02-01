@@ -9,16 +9,19 @@ import "slick-carousel/slick/slick-theme.css"; // react slick
 import ShopContextProvider from "./Context/ShopContext";
 import BestContextProvider from "./Context/BestContext";
 // import { ThemeProvider } from "./Components/Toggle/ToggleTheme";
+import { HelmetProvider } from "react-helmet-async";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <ThemeProvider>
-    <BrowserRouter>
-      <ShopContextProvider>
-        <BestContextProvider>
+  <BrowserRouter>
+    <ShopContextProvider>
+      <BestContextProvider>
+        <HelmetProvider>
           <App />
-        </BestContextProvider>
-      </ShopContextProvider>
-    </BrowserRouter>
+        </HelmetProvider>
+      </BestContextProvider>
+    </ShopContextProvider>
+  </BrowserRouter>
   // </ThemeProvider>
 );

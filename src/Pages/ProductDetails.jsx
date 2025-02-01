@@ -2,6 +2,8 @@ import React, { useContext } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import { useParams } from 'react-router-dom'
 import Breadcrumb from '../Components/Breadcrumb/Breadcrumb'
+import { Helmet } from "react-helmet-async";
+
 export const Products = () => {
   const { AllData } = useContext(ShopContext)
   const { productId } = useParams()
@@ -9,6 +11,10 @@ export const Products = () => {
   console.log(product)
   return (
     <>
+      <Helmet>
+        <title>{product.productName}</title>
+        <meta name="description" content={product.description} />
+      </Helmet>
       <div className="container">
         <Breadcrumb product={product} />
         <div className="product-detail-page container">

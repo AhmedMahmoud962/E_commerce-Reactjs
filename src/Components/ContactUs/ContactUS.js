@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUS.css";
+import { Link } from "react-router-dom";
 
 const ContactUS = () => {
   return (
@@ -17,21 +18,21 @@ const ContactUS = () => {
                   <span>
                     <i className="fa-solid fa-location-dot pe-1"></i> Address
                   </span>
-                  <a href="#">Maddi Boulevard, Toronto, Ontario</a>
+                  <Link href="#">Maddi Boulevard, Toronto, Ontario</Link>
                 </li>
                 <li>
                   <span>
                     <i className="fa-solid fa-phone pe-1"></i> Phone
                   </span>
-                  <a href="tel:+201033993202">010 33 99 3202</a>
+                  <Link href="tel:+201033993202">010 33 99 3202</Link>
                 </li>
                 <li>
                   <span>
                     <i className="fa-solid fa-envelope pe-1"></i> Email
                   </span>
-                  <a href="mailto:ahmedmahmoud9621@gmail.com">
+                  <Link href="mailto:ahmedmahmoud9621@gmail.com">
                     ahmedmahmoud6921@gmail.com
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

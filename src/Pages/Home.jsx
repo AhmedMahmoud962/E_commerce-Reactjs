@@ -10,9 +10,15 @@ import RecentNews from '../Components/RecentNews/RecentNews'
 import ViewProducts from '../Components/Products/ViewProducts'
 // import Footer from '../Components/Footer/Footer'
 // import { AllData } from '../assets/data'
+import { Helmet } from 'react-helmet-async'
+
 export const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Home</title>
+        <meta name="description" content="Home page of E-commerce Website  " />
+      </Helmet>
       <Hero />
       <Category />
       <BestProduct />

@@ -3,6 +3,8 @@ import { BestProduct } from '../Context/BestContext'
 import { useParams } from 'react-router-dom'
 import Breadcrumb from '../Components/Breadcrumb/Breadcrumb'
 import './css/ShopCategory.css'
+import { Helmet } from "react-helmet-async";
+
 
 function BestProductDetails() {
   const { BestProductData } = useContext(BestProduct)
@@ -12,6 +14,10 @@ function BestProductDetails() {
   )
   return (
     <>
+      <Helmet>
+        <title>{product.productName}</title>
+        <meta name="description" content={product.description} />
+      </Helmet>
       <Breadcrumb product={product} />
       <div className="product-detail-page container">
         <div className="product-detail-content">
